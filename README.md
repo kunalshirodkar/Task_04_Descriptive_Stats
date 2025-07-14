@@ -57,40 +57,32 @@ Make sure your CSV files are correctly placed in the folder period_03_data/.
 
 
 
-📊 Summary of Findings
-Facebook Ads
-Ads were heavily targeted using specific regions and demographics.
+---
 
-The most frequent sponsor was "HARRIS FOR PRESIDENT".
+## 📊 Summary of Findings
 
-Metrics like estimated_spend and estimated_impressions were highly skewed.
+### 🟦 Facebook Ads
+- Ads were heavily targeted using specific regions and demographics.
+- The most frequent sponsor was **"HARRIS FOR PRESIDENT"**.
+- Metrics like `estimated_spend` and `estimated_impressions` were highly skewed.
+- Over **200,000 unique ads** and **thousands of distinct delivery profiles** were observed.
 
-Over 200,000 unique ads and thousands of distinct delivery profiles.
+### 🟦 Facebook Posts
+- Majority of posts came from pages categorized as **"PERSON"** or **"POLITICAL_CANDIDATE"**.
+- Videos and live streams generated significantly higher engagement.
+- Posts showed large variance in likes, shares, and reactions.
 
-Facebook Posts
-Majority of posts came from pages categorized as "PERSON" or "POLITICAL_CANDIDATE".
+### 🟦 Twitter Posts
+- Most tweets came from mobile platforms like **Twitter for iPhone**.
+- Engagement followed a long-tail pattern — a few tweets went viral.
+- Most tweets were in English (`lang = en`), and flags for controversial topics (like **"scam"**) were rarely triggered.
 
-Videos and live streams generated significantly higher engagement.
+---
 
-Posts showed large variance in likes, shares, and reactions.
+## 💭 Reflections
 
-Twitter Posts
-Most tweets came from mobile platforms like Twitter for iPhone.
+- **Pure Python**: Required the most manual work (loops, type checks), but offered full control and learning value.
+- **Pandas**: Easiest to use — methods like `describe()`, `groupby()`, and `value_counts()` made analysis quick and readable.
+- **Polars**: Much faster for large files. Loved the lazy evaluation model, but syntax required some getting used to.
 
-Engagement followed a long-tail pattern — a few tweets went viral.
-
-English (lang = en) was dominant; controversial topics (like "scam") were flagged rarely.
-
-💭 Reflections
-Pure Python: Required the most manual work (loops, type checks), but gave full control.
-
-Pandas: Easiest to use; its describe(), groupby(), and value_counts() made quick analysis smooth and readable.
-
-Polars: Faster than Pandas, especially for large files. The lazy evaluation is impressive, but syntax has a learning curve.
-
-Getting consistent results across the three approaches involved careful type handling and null value treatment.
-
-I found AI tools like ChatGPT helpful in resolving syntax errors, especially for Polars.
-
-If I were mentoring a junior data analyst, I’d recommend starting with Pandas, then exploring Polars for performance.
 
