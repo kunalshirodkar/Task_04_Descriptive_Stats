@@ -46,7 +46,7 @@ Place them inside a local folder named `period_03_data/`
 
 Install required packages (only once):
 
-```
+```bash
 pip install pandas polars
 Then run each script one by one:
 
@@ -54,7 +54,7 @@ python pure_python_stats.py
 python pandas_stats.py
 python polars_stats.py
 Make sure your CSV files are correctly placed in the folder period_03_data/.
-```
+
 
 
 📊 Summary of Findings
