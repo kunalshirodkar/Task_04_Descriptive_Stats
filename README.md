@@ -46,17 +46,16 @@ Place them inside a local folder named `period_03_data/`
 
 Install required packages (only once):
 
-```bash
+```
 pip install pandas polars
 Then run each script one by one:
 
-bash
-Copy
-Edit
 python pure_python_stats.py
 python pandas_stats.py
 python polars_stats.py
 Make sure your CSV files are correctly placed in the folder period_03_data/.
+```
+
 
 📊 Summary of Findings
 Facebook Ads
@@ -94,3 +93,4 @@ Getting consistent results across the three approaches involved careful type han
 I found AI tools like ChatGPT helpful in resolving syntax errors, especially for Polars.
 
 If I were mentoring a junior data analyst, I’d recommend starting with Pandas, then exploring Polars for performance.
+
